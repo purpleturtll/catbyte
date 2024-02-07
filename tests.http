@@ -1,0 +1,24 @@
+POST http://localhost:8080/message
+content-type: application/json
+
+{
+    "message": "Hello, World! xD",
+    "sender": "John Doe",
+    "receiver": "Jane Doe"
+}
+
+###
+
+POST http://localhost:8080/message
+content-type: application/json
+
+{
+    "message": "Hello, World! xD",
+    "sender": "Adam Doe",
+    "receiver": "Jane Doe"
+}
+
+###
+
+GET http://localhost:8081/message/list?sender=John%20Doe&receiver=Jane%20Doe
+
